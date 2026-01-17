@@ -18,7 +18,7 @@ export default function Tasks(props) {
           key={task.id}
           className=" w-150 flex justify-between items-center flex-wrap bg-white min-h-10 rounded-xl p-2 gap-2"
         >
-          <div className="w-3/4 wrap-break-word">
+          <div className="basis-full shrink wrap-break-word">
             <p
               class={
                 task.isCompleted
@@ -37,7 +37,7 @@ export default function Tasks(props) {
             )}
           </div>
 
-          <div className="flex gap-1 items-center flex-wrap ">
+          <div className="flex basis-full gap-1 items-center ">
             <input
               className="w-15 h-6 cursor-pointer"
               type="checkbox"

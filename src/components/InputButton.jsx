@@ -3,7 +3,7 @@ export default function InputButton(props) {
     <button
       type="button"
       onClick={props.onClick}
-      className={` rounded-2xl h-12 w-15 cursor-pointer  text-purple-600 hover:bg-purple-600 hover:text-white hover:border-0 ${
+      className={` rounded-2xl h-12 basis-15 grow-0 shrink cursor-pointer  text-purple-600 hover:bg-purple-600 hover:text-white hover:border-0 ${
         props.className || ""
       }`}
     >

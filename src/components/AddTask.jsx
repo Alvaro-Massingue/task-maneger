@@ -7,8 +7,8 @@ const AddTask = (props) => {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
   return (
-    <div className="mt-20 ">
-      <div className="flex flex-wrap gap-4">
+    <div className="mt-20 w-1/2 flex flex-col items-center gap-2">
+      <div className="flex w-full gap-4">
         <InputTitle
           value={title}
           onChange={(event) => setTitle(event.target.value)}
@@ -29,7 +29,7 @@ const AddTask = (props) => {
           }}
         />
       </div>
-      <p className="text-purple-600">{props.error}</p>
+      <p className="text-purple-600 self-start">{props.error}</p>
     </div>
   );
 };
