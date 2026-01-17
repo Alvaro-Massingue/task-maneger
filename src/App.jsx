@@ -4,16 +4,7 @@ import UpdateTask from "./pages/UpdateTask";
 import { Routes, Route } from "react-router-dom";
 
 const App = () => {
-  const [tasks, setTasks] = useState([
-    {
-      id: 1,
-      title: "Estudar programacao",
-      description:
-        "Estudar programacao para me tornar um desenvolvedor fullstack",
-      isCompleted: false,
-      isDisplayed: false,
-    },
-  ]);
+  const [tasks, setTasks] = useState([]);
   const [error, setError] = useState("");
   const [errorUpdate, setErrorUpdate] = useState("");
 
