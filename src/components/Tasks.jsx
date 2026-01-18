@@ -12,13 +12,13 @@ export default function Tasks(props) {
   };
 
   return (
-    <div className="flex flex-col gap-4 ">
+    <div className="flex w-1/2 items-center flex-col gap-4">
       {props.tasks.map((task) => (
         <div
           key={task.id}
-          className=" w-150 flex justify-between items-center flex-wrap bg-white min-h-10 rounded-xl p-2 gap-2"
+          className=" w-full flex items-center flex-wrap bg-white rounded-xl p-2 gap-2"
         >
-          <div className="basis-full shrink wrap-break-word">
+          <div className="basis-full wrap-break-word w-1/2">
             <p
               class={
                 task.isCompleted
@@ -37,7 +37,7 @@ export default function Tasks(props) {
             )}
           </div>
 
-          <div className="flex basis-full gap-1 items-center ">
+          <div className="flex basis-full gap-1 items-center">
             <input
               className="w-15 h-6 cursor-pointer"
               type="checkbox"

@@ -69,6 +69,7 @@ const App = () => {
           }
         })
       );
+
       return true;
     } else {
       setErrorUpdate("Prencher os espacos em branco");
