@@ -1,9 +1,22 @@
 import { useEffect, useState } from "react";
 import Home from "./pages/Home";
 import UpdateTask from "./pages/UpdateTask";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route,useLocation } from "react-router-dom";
+import { initGA, pageView } from "./analytics";
 
 const App = () => {
+  const location = useLocation();
+
+  // Inicializa GA só uma vez
+  useEffect(() => {
+    initGA();
+  }, []);
+
+  // Envia pageview toda vez que a rota muda
+  useEffect(() => {
+    pageView(location.pathname);
+  }, [location]);
+
   const [tasks, setTasks] = useState([]);
   const [error, setError] = useState("");
   const [errorUpdate, setErrorUpdate] = useState("");
