@@ -11,8 +11,8 @@ const AddTask = (props) => {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
   return (
-    <div className="mt-20 w-1/2 flex flex-col gap-2">
-      <div className="flex w-full flex-wrap gap-2">
+    <div className="mt-20 w-1/2  flex flex-col gap-2">
+      <div className="flex w-full justify-center flex-wrap gap-2">
         <InputTitle
           value={title}
           onChange={(event) => setTitle(event.target.value)}

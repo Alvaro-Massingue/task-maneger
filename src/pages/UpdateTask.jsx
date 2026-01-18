@@ -21,7 +21,7 @@ const UpdateTask = (props) => {
   return (
     <div className="bg-gray-950 w-full min-h-screen flex items-center flex-col gap-16 m-0 overflow-x-hidden">
       <div className="mt-20 flex w-1/2 flex-col gap-4">
-        <div className="flex flex-wrap w-full gap-4">
+        <div className="flex flex-wrap justify-center w-full gap-4">
           <InputTitle
             value={newTitle}
             onChange={(event) => setNewTitle(event.target.value)}
