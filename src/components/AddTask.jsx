@@ -1,9 +1,13 @@
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import InputTitle from "./InputTitle";
 import InputDescription from "./InputDescription";
 import InputButton from "./InputButton";
 
 const AddTask = (props) => {
+  useEffect(() => {
+    props.setError("");
+  }, []);
+
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
   return (

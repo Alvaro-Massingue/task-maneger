@@ -89,6 +89,7 @@ const App = () => {
             isCompleted={isCompleted}
             isDisplayed={isDisplayed}
             error={error}
+            setError={setError}
           />
         }
       />
@@ -99,6 +100,7 @@ const App = () => {
             tasks={tasks}
             updateTask={updateTask}
             errorUpdate={errorUpdate}
+            setErrorUpdate={setErrorUpdate}
           />
         }
       />

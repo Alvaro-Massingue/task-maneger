@@ -2,7 +2,7 @@ import InputButton from "../components/InputButton";
 import InputTitle from "../components/InputTitle";
 import InputDescription from "../components/InputDescription";
 import { useNavigate, useSearchParams } from "react-router-dom";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const UpdateTask = (props) => {
   const [searchParams] = useSearchParams();
@@ -15,6 +15,9 @@ const UpdateTask = (props) => {
   if (!id || !title || !description) {
     navigate("/");
   }
+  useEffect(() => {
+    props.setErrorUpdate("");
+  }, []);
   return (
     <div className="bg-gray-950 w-full min-h-screen flex items-center flex-col gap-16 m-0 overflow-x-hidden">
       <div className="mt-20 flex w-1/2 flex-col gap-4">
@@ -47,6 +50,7 @@ const UpdateTask = (props) => {
             navigate(-1);
             setNewTitle("");
             setNewDescription("");
+            props.setErrorUpdate("");
           }}
           icon="arrow_back"
           className="border-2 border-purple-600"

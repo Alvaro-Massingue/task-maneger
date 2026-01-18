@@ -4,7 +4,7 @@ import Tasks from "../components/Tasks";
 const Home = (props) => {
   return (
     <div className="bg-gray-950 w-full min-h-screen flex items-center flex-col gap-16 m-0 overflow-x-hidden">
-      <AddTask addTask={props.addTask} error={props.error} />
+      <AddTask addTask={props.addTask} error={props.error} setError={props.setError} />
       <Tasks
         tasks={props.tasks}
         removeTask={props.removeTask}
