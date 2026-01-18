@@ -2,7 +2,7 @@ import ReactGA from "react-ga4";
 
 // Inicializa GA
 export const initGA = () => {
-  ReactGA.initialize("G-XXXXXXXXXX"); // substitua pelo seu ID
+  ReactGA.initialize("G-MN3L7KFQ7P");
 };
 
 // Envia pageview
