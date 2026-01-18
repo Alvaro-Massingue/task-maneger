@@ -12,7 +12,7 @@ export default function Tasks(props) {
   };
 
   return (
-    <div className="flex w-1/2 items-center flex-col gap-4">
+    <div className="flex w-screen md:w-1/2 items-center flex-col gap-4">
       {props.tasks.map((task) => (
         <div
           key={task.id}
