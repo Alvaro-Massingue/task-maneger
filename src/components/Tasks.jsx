@@ -24,7 +24,7 @@ export default function Tasks(props) {
         >
           <div className="basis-full wrap-break-word w-1/2">
             <p
-              class={
+              className={
                 task.isCompleted
                   ? "text-gray-500 text-xl opacity-40"
                   : "text-purple-600 text-xl"
