@@ -11,7 +11,7 @@ const AddTask = (props) => {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
   return (
-    <div className="w-screen md:w-1/2 flex flex-col gap-2">
+    <div className="w-[95%] md:w-1/2 flex flex-col gap-2">
       <div className="flex w-full justify-center flex-wrap gap-4 md:gap-2">
         <InputTitle
           value={title}
