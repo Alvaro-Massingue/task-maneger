@@ -1,9 +1,11 @@
 import AddTask from "../components/AddTask";
 import Tasks from "../components/Tasks";
+import Title from "../components/Title"
 
 const Home = (props) => {
   return (
     <div className="bg-gray-950 w-full min-h-screen flex items-center flex-col gap-16 m-0 overflow-x-hidden">
+      <Title/>
       <AddTask addTask={props.addTask} error={props.error} setError={props.setError} />
       <Tasks
         tasks={props.tasks}
