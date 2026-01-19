@@ -12,6 +12,8 @@ const Home = (props) => {
         removeTask={props.removeTask}
         isCompleted={props.isCompleted}
         isDisplayed={props.isDisplayed}
+        error={props.error}
+        setError={props.setError}
       />
     </div>
   );

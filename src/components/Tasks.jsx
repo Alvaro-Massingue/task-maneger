@@ -4,10 +4,14 @@ import InputButton from "../components/InputButton";
 export default function Tasks(props) {
   const navigate = useNavigate();
   const updateTask = (task) => {
-    if (task.id && task.title && task.description) {
-      navigate(
-        `/update?id=${task.id}&&title=${task.title}&&description=${task.description}&&update=${task.isUpdated}`
-      );
+    if (!task.isCompleted) {
+      if (task.id && task.title && task.description) {
+        navigate(
+          `/update?id=${task.id}&&title=${task.title}&&description=${task.description}&&update=${task.isUpdated}`,
+        );
+      }
+    }else{
+      props.setError("Nao e possivel editar uma tarefa concluida");
     }
   };
 
